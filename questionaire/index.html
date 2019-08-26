@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>questionaire</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../docs/css/style.css">
+</head>
+<body>
+
+
+
+
+<form method="post" action="index.php">
+  <input type="submit" value="開放問答"><input type="submit" value="選擇問答">
+
+  <h1>1 對於完成目標前的準備，你會:</h1>
+  <?php include'prep.php'; ?>
+  <textarea class="range"></textarea>
+  <?php include'prep_bible.php'; ?>
+
+  <h1>2 我通常選擇的依據是:</h1>
+  <?php include'envidence.php'; ?>
+  <textarea class="range"></textarea>
+  <?php include'envidence_book.php'; ?>
+
+  <label class="beautiful_name"><h1>3 對於完成目標的進程，你會:</h1></label>
+
+
+    <input type="radio" name="choice" value="progress" checked>a 我喜歡各個擊破，循序漸進完成
+
+    <a ><img src="docs/asset/img/plus.svg" class="img_plus"></a>
+
+    <input type="radio" name="choice" value="something">b 我偏好一鼓作氣，徹底解決問題
+
+    <a ><img src="docs/asset/img/plus.svg" class="img_plus"></a>
+
+    <input type="radio" name="choice" value="some">c 我通常不特別安排執行步驟，先做再說
+
+    <a ><img src="docs/asset/img/plus.svg" class="img_plus"></a>
+<?php include'radio_value.php'; ?>
+<!--
+    <svg class="chaos" xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewbox="0 0 800 600">
+
+          <text id="pattern">
+              <input type="radio" name="choice" id="A" value="progress">
+              <label for="A" class="beautiful_name"><h1>a 我喜歡各個擊破，循序漸進完成</h1></label>
+          </text>
+
+      <use href="#pattern" x="0" y="0" />
+      <use href="#pattern" x="0" y="20" />
+    </svg>
+
+
+
+
+
+
+    <svg class="chaos" xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewbox="0 0 800 600">
+
+          <text id="pattern">
+              <input type="radio" name="choice" id="A" value="progress">
+              <label for="A" class="beautiful_name"><h1>b 我偏好一鼓作氣，徹底解決問題</h1></label>
+          </text>
+
+      <use href="#pattern" x="0" y="0" />
+      <use href="#pattern" x="0" y="20" />
+    </svg>
+
+
+
+
+    <svg class="chaos" xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewbox="0 0 800 600">
+
+          <text id="pattern">
+              <input type="radio" name="choice" id="A" value="progress">
+              <label for="A" class="beautiful_name"><h1>c 我通常不特別安排執行步驟，先做再說</h1></label>
+          </text>
+
+      <use href="#pattern" x="0" y="0" />
+      <use href="#pattern" x="0" y="20" />
+    </svg>
+-->
+
+  <input type="submit" name="submit" value="送出">
+  <?php include'submit.php'; ?>
+  <?php include'index.php'; ?>
+</form>
+</body>
+</html>
